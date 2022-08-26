@@ -34,8 +34,8 @@ int	ft_putunnbr(unsigned int n)
 		len += ft_putchar(n + '0');
 	if (n > 9)
 	{
-		len += ft_putnbr(n / 10);
-		len += ft_putnbr(n % 10);
+		len += ft_putunnbr(n / 10);
+		len += ft_putunnbr(n % 10);
 	}
 	return (len);
 }
